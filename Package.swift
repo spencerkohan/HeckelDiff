@@ -28,15 +28,11 @@ import PackageDescription
 
 let package = Package(
     name: "HeckelDiff",
-    platforms: [
-        .iOS(.v8),
-        .tvOS(.v9)
-    ],
     products: [
         .library(name: "HeckelDiff", targets: ["HeckelDiff"])
     ],
     targets: [
-        .target(name: "HeckelDiff", path: "Source")
+        .target(name: "HeckelDiff")
     ],
-    swiftLanguageVersions: [.v5, .v4_2]
+    swiftLanguageVersions: [.v5]
 )
